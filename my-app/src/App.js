@@ -42,7 +42,11 @@ function App() {
         <button onClick={clearPrompt}>취소</button>
         <button onClick={install}>홈 화면에 추가</button>
       </div>
-  ) : null
+  ) : (
+      <div>
+        {JSON.stringify(deferredPrompt)}
+      </div>
+  )
 }
 
 export default App;

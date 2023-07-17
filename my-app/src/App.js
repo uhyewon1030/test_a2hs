@@ -1,3 +1,4 @@
+import logo from './logo.svg';
 import './App.css';
 import {useEffect, useState} from 'react';
 const useA2HS = () => {
@@ -38,12 +39,12 @@ function App() {
   const { deferredPrompt, install, clearPrompt } = useA2HS();
   return deferredPrompt ? (
       <div>
-        젠킨스 테스트를 해보겠다
         <button onClick={clearPrompt}>취소</button>
         <button onClick={install}>홈 화면에 추가</button>
       </div>
   ) : (
       <div>
+        젱킹스!!
         {JSON.stringify(deferredPrompt)}
       </div>
   )
